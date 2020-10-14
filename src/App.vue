@@ -9,6 +9,7 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+// this does not produce any error??
 import { myTestFunction } from './test'
 
 export default Vue.extend({
