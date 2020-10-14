@@ -4,10 +4,19 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import { myTestFunction } from './test'
 
+export default Vue.extend({
+  created() {
+    myTestFunction()
+  },
+})
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
